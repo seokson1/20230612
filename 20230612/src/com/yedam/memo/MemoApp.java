@@ -2,7 +2,7 @@ package com.yedam.memo;
 
 import java.util.Scanner;
 
-public class MempApp {
+public class MemoApp {
 	public static void main(String[] args) {
 
 		Scanner scn = new Scanner(System.in);
