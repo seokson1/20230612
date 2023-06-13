@@ -5,4 +5,5 @@ public interface MENU {
 	int SEARCH = 2;
 	int DELETE = 3;
 	int EXIT = 4;
+	int START = 5;
 }

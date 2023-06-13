@@ -12,7 +12,7 @@ public class MemoApp {
 
 		while (true) {
 			try {
-				System.out.println("1.등록 | 2.검색 | 3.삭제 | 4.종료");
+				System.out.println("1.등록 | 2.검색 | 3.삭제 | 4.종료 | 5.실행" );
 				System.out.print("선택> ");
 				choice = Integer.parseInt(scn.nextLine());
 
@@ -29,6 +29,8 @@ public class MemoApp {
 				case MENU.EXIT:
 					app.storeToFile();
 					throw new ExitException(); // 종료처리
+				case MENU.START:
+					app.readFromFile();;
 				}
 			} catch (ExitException e) {
 				break;
